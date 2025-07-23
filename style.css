@@ -1,0 +1,281 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+}
+/*menu*/
+.menu-b{
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 150px;
+    box-shadow: 1px 1px whitesmoke;
+}
+.menu-f{
+    margin-left: 4vw;
+    text-align: center;
+    align-self: center;
+    color: #0A1A52;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.i1{
+    width: 100%;
+    height: 25vw;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px lightgray;
+}
+.i2{
+    width: 100%;
+    height: 15vw;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px lightgray;
+}
+.l1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    box-sizing: content-box;
+    margin: 0 0 0 0;
+    padding: 0;
+    justify-content: right;
+}
+.l1 li{
+    width:12%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    vertical-align: right;
+    font-size: 19px;
+}
+li a{
+    display: grid;
+    align-items: center;
+}
+li p{
+    display: grid;
+    align-items: center;
+}
+.l2{
+    display: none;
+}
+.main-onas p {
+    width: 50%;
+    margin: auto;
+}
+/*main*/
+.main-b{
+    position: static;
+    width: 100%;
+    left: 0;
+    top: 50px;
+}
+.main-onas{
+    width: 90%;
+    margin: auto;
+    line-height:45px;
+    padding-bottom: 80px;
+}
+.main-onas h2{
+    padding-top: 10px;
+    text-align: center;
+}
+.main-dost{
+    width: 70%;
+    margin: auto;
+    line-height:45px;
+    padding-bottom: 80px;
+}
+.main-dost h2{
+    padding-top: 10px;
+    text-align: center;
+}
+.main-of{
+    width: 50%;
+    margin: auto;
+    line-height:45px;
+    padding-bottom: 80px;
+}
+.main-of h2{
+    padding-top: 10px;
+    text-align: center;
+}
+.main-of ul{
+    line-height: 20px;
+}
+.main-kont{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 20px;
+    width: 100%;
+}
+.kont-m{
+    display: flex;
+    padding-top: 10vw;
+    width: 90%;
+    margin: auto;
+    height:60vh;
+}
+.main-kont1{
+    text-align: center;
+    line-height: 20px;
+    width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #0A1A52;
+    box-shadow: 0px 0px 2px 0px black;
+}
+.pb{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+hr{
+    margin: 0;
+    padding: 0;
+    color: #0A1A52;
+}
+.btw{
+    display: none;
+}
+i, a, .pinf{
+    display: inline;
+}
+i{
+    vertical-align: middle;
+}
+a:visited{
+    color: black;
+}
+a:link{
+    color: black;
+}
+a.current{
+    color:#1434A4;
+}
+div a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    background-color: #0A1A52;
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bg p{
+    margin-top: 0;
+}
+.bg a, i{
+    color: white;
+}
+
+.ph-nav{
+    display: none;
+}
+.spacer{
+    height: 13vh;
+}
+/*mobile handling*/
+@media only screen and (max-width: 500px){
+    .menu-b{
+        height: 30vw;
+    }
+    .menu-b .l1{
+        display: none;
+    }
+    .menu-b{
+        position: fixed;
+    }
+    .menu-f{
+    margin-left: 2vw;
+    text-align: center;
+    align-self: center;
+    color: #0A1A52;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .i1{
+        margin-top: 30vw;
+    }
+    .i2{
+        margin-top: 30vw;
+    }
+    .main-b{
+    position: static;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    }
+    .main-onas{
+        line-height: 6vw;
+    }
+    .main-onas p{
+    width: 80%;
+    margin: auto;
+    }
+    .l2{
+        display: flex;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    .l2 li{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 60%;
+    }
+    .l2 li p{
+        width: 100%;
+    }
+    .btw{
+        display: block;
+        width: 60%;
+        margin: auto;
+        color: whitesmoke;
+        margin-top: 1vh;
+    }
+    .bg{
+        box-shadow: none;
+    }
+    .kont-m{
+    padding-top: 33vw;
+    padding-bottom: 3vw;
+    width: 90%;
+    margin: auto;
+    height:50vh;
+    }
+    .main-kont1{
+        padding-top: 1vh;
+        background-color: #0A1A52;
+        box-shadow: 0px 0px 2px 0px black;
+    }
+    .ph-nav, .ph-nav a, i,a p{
+        display: inline;
+        color: whitesmoke;
+    }
+    .ninfo{
+        font-weight: 600;
+    }
+    .spacer{
+        display: none;
+    }
+}
